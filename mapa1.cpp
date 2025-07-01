@@ -1,5 +1,7 @@
 #include <iostream>
 #include <vector>
+using namespace std;
+
 
 
 //declaracion de la matriz de tipo char para la elaboracion del laberinto
