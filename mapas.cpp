@@ -3,7 +3,6 @@
 using namespace std;
 
 
-
 //declaracion de la matriz de tipo char para la elaboracion del laberinto
 
 //laberinto nivel sencillo
@@ -86,4 +85,6 @@ cout << endl;
 
 }
 //llamar a la funcion mostrarlaberinto en el main
+
+
 
