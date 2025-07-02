@@ -3,7 +3,7 @@
 #include <vector>
 using namespace std;
 
-//Laberinto con tematica binario
+//Binary
 void mazeb(){
     vector<string> Mazeb ={
 //Fila 0 columna 18 punto de inicio
@@ -25,4 +25,23 @@ void mazeb(){
     }
 };
 
-//Laberinto tematica jardin
+//Garden of Sunflowers
+void mazeg(){
+    vector<string> Mazeg={
+    //Inicia en fila 1 columna 3
+    //🌹 son colectibles
+    "🌻 🌻 🌻 🌻 🌻 🌻 🌻 🌻 🌻 🌻",
+    "🌻 🐝 🟦 🟦 🟦 🌻 🟦 🟦 🌹 🌻",
+    "🌻 🌻 🟦 🌻 🟦 🌻 🟦 🌻 🌻 🌻",
+    "🌻 🌹 🟦 🌻 🟦 🌻 🟦 🌻 🌻 🌻",
+    "🌻 🌻 🌻 🟦 🟦 🌻 🟦 🟦 🌹 🌻",
+    "🌻 🌻 🟦 🟦 🌻 🌻 🟦 🌻 🌻 🌻",
+    "🌻 🌻 🟦 🌻 🌻 🌻 🟦 🟦 🟦 🐞",
+    "🌻 🌻 🟦 🟦 🟦 🟦 🟦 🌻 🌻 🌻",
+    "🌻 🌻 🌻 🌻 🌻 🌻 🌻 🌻 🌻 🌻"
+};
+    int labf=Mazeg.size();
+    for (size_t i = 0; i < labf; ++i) {
+        cout<<Mazeg[i]<<endl;
+    }
+};
