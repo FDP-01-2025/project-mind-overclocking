@@ -7,7 +7,7 @@ using namespace std;
 void mazeb(){
     vector<string> Mazeb ={
 //Fila 0 columna 18 punto de inicio
-//Las B son colectibles
+//Las B son colectibles, Protagonista: Y
     "0 0 0 0 0 0 0 0 0 Y 0 0 0 0 0 0 0 0 0 0",
     "0 B 0 0 1 1 1 0 1 1 0 0 1 1 1 1 0 1 B 0",
     "0 1 0 0 1 0 1 1 1 0 1 1 1 0 0 1 1 1 0 0",
@@ -29,7 +29,7 @@ void mazeb(){
 void mazeg(){
     vector<string> Mazeg={
     //Inicia en fila 1 columna 3
-    //🌹 son colectibles
+    //🌹 son colectibles, Protagonista:🐝
     "🌻 🌻 🌻 🌻 🌻 🌻 🌻 🌻 🌻 🌻",
     "🌻 🐝 🟦 🟦 🟦 🌻 🟦 🟦 🌹 🌻",
     "🌻 🌻 🟦 🌻 🟦 🌻 🟦 🌻 🌻 🌻",
@@ -43,5 +43,42 @@ void mazeg(){
     int labf=Mazeg.size();
     for (size_t i = 0; i < labf; ++i) {
         cout<<Mazeg[i]<<endl;
+    }
+};
+
+//Green friends
+void mazel(){
+    vector<string> Mazel={
+    //Inicia en fila 1 columna 1
+    //🐢 es la coleccionable, Protagonista:🐸
+    "🌿 🌿 🌿 🌿 🌿 🌿 🌿 🌿 🌿 🌿 🌿",
+    "🐸 🟩 🟩 🟩 🟩 🟩 🟩 🌿 🟩 🟩 🌿",
+    "🌿 🌿 🌿 🟩 🌿 🌿 🟩 🌿 🌿 🟩 🌿",
+    "🌿 🌿 🌿 🟩 🌿 🌿 🟩 🟩 🟩 🟩 🌿",
+    "🌿 🟩 🟩 🟩 🌿 🌿 🌿 🌿 🟩 🌿 🌿",
+    "🌿 🟩 🌿 🌿 🌿 🌿 🟩 🟩 🟩 🟩 🌿",
+    "🌿 🟩 🌿 🌿 🌿 🟩 🟩 🌿 🌿 🌿 🌿",
+    "🌿 🟩 🌿 🌿 🟩 🟩 🌿 🌿 🟩 🟩 🌿",
+    "🌿 🟩 🐢 🌿 🟩 🌿 🌿 🌿 🌿 🟩 🌿 🌿 🌿 🌿",
+    "🌿 🟩 🟩 🌿 🟩 🟩 🟩 🟩 🌿 🟩 🟩 🟩 🟩 🌿",
+    "🌿 🌿 🟩 🌿 🌿 🌿 🌿 🟩 🌿 🌿 🌿 🌿 🟩 🌿",
+    "🌿 🌿 🟩 🟩 🟩 🟩 🌿 🟩 🌿 🟩 🟩 🟩 🟩 🌿",
+    "🌿 🟩 🌿 🌿 🌿 🟩 🌿 🟩 🌿 🟩 🌿 🟩 🌿 🌿",
+    "🌿 🟩 🟩 🟩 🟩 🟩 🌿 🟩 🌿 🟩 🌿 🟩 🌿 🌿 🌿 🌿 🌿 🌿 🌿",
+    "🌿 🟩 🌿 🌿 🌿 🌿 🌿 🟩 🌿 🟩 🌿 🌿 🌿 🟩 🟩 🟩 🟩 🟩 🌿",
+    "🌿 🟩 🌿 🟩 🟩 🟩 🌿 🟩 🌿 🟩 🌿 🌿 🌿 🟩 🌿 🟩 🌿 🌿 🌿",
+    "🌿 🟩 🌿 🟩 🌿 🟩 🌿 🟩 🌿 🟩 🌿 🌿 🌿 🟩 🌿 🟩 🌿 🟩 🌿",
+    "🌿 🟩 🟩 🟩 🌿 🟩 🌿 🟩 🌿 🟩 🌿 🟩 🟩 🟩 🌿 🟩 🌿 🟩 🌿",
+    "🌿 🟩 🌿 🌿 🌿 🟩 🌿 🟩 🌿 🟩 🌿 🟩 🌿 🌿 🌿 🟩 🟩 🟩 🌿",
+    "🌿 🐢 🌿 🌿 🌿 🟩 🌿 🟩 🟩 🟩 🟩 🟩 🌿 🌿 🌿 🌿 🌿 🟩 🌿",
+    "🌿 🌿 🌿 🌿 🌿 🟩 🌿 🌿 🌿 🌿 🌿 🌿 🌿 🟩 🟩 🟩 🌿 🟩 🌿",
+    "🌿 🌿 🌿 🌿 🌿 🟩 🌿 🌿 🌿 🌿 🌿 🌿 🌿 🟩 🌿 🟩 🌿 🌿 🌿",
+    "🌿 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🐢 🌿 🟩 🟩 🟩 🐸",
+    "🌿 🌿 🌿 🌿 🌿 🌿 🌿 🌿 🌿 🌿 🌿 🌿 🌿 🌿 🌿 🌿 🌿 🌿 🌿"
+
+};
+    int labf=Mazel.size();
+    for (size_t i = 0; i < labf; ++i) {
+        cout<<Mazel[i]<<endl;
     }
 };
