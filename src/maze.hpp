@@ -112,3 +112,24 @@ void mazer(){
         cout<<Mazer[i]<<endl;
     }
 };
+
+//Crumbs
+void mazem(){
+    vector <string> Mazem = {
+    //Inicia columna 19, fila 7
+    //🐤 es coleccionable, Protagonista: 🐦
+    "🌙 🌙 🌙 🌙 🍞 🌙 🌙 🌙 🌙 🌙",
+    "🌙 ⭐ 🌙 🌙 ⭐ ⭐ ⭐ 🌙 🌙 🌙",
+    "🌙 ⭐ 🌙 🌙 🌙 ⭐ 🐤 🌙 🌙 🌙",
+    "🌙 ⭐ ⭐ 🌙 ⭐ ⭐ 🌙 🌙 🌙 🌙",
+    "🌙 ⭐ 🌙 🌙 ⭐ 🌙 🌙 ⭐ ⭐ 🌙",
+    "🌙 ⭐ ⭐ 🌙 ⭐ ⭐ 🌙 🌙 ⭐ 🌙",
+    "🌙 🌙 ⭐ ⭐ 🌙 ⭐ 🌙 🌙 🐤 🌙",
+    "🌙 🌙 🌙 🐤 ⭐ ⭐ ⭐ ⭐ ⭐ 🐦",
+    "🌙 🌙 🌙 🌙 🌙 🌙 🌙 🌙 🌙 🌙"
+};
+    int labf=Mazem.size();
+    for (size_t i = 0; i < labf; ++i) {
+        cout<<Mazem[i]<<endl;
+    }
+};
