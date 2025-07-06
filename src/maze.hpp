@@ -6,8 +6,6 @@ using namespace std;
 
 //Binary
 void mazeb(){
-    SetConsoleOutputCP(CP_UTF8);
-    SetConsoleCP(CP_UTF8);
     vector<string> Mazeb ={
 //Fila 0 columna 18 punto de inicio
 //Las B son colectibles, Protagonista: Y
@@ -30,8 +28,6 @@ void mazeb(){
 
 //Garden of Sunflowers
 void mazeg(){
-    SetConsoleOutputCP(CP_UTF8);
-    SetConsoleCP(CP_UTF8);
     vector<string> Mazeg={
     //Inicia en fila 1 columna 3
     //🌹 son colectibles, Protagonista:🐝
@@ -53,8 +49,6 @@ void mazeg(){
 
 //Green friends
 void mazel(){
-    SetConsoleOutputCP(CP_UTF8);
-    SetConsoleCP(CP_UTF8);
     vector<string> Mazel={
     //Inicia en fila 1 columna 1
     //🐢 es la coleccionable, Protagonista:🐸
@@ -92,8 +86,6 @@ void mazel(){
 
 //Rats
 void mazer(){
-    SetConsoleOutputCP(CP_UTF8);
-    SetConsoleCP(CP_UTF8);
     vector <string> Mazer ={
     //Inicia columna 9, fila 0
     //🧀 es coleccionable, Protagonista: 🐭
@@ -124,8 +116,6 @@ void mazer(){
 
 //Crumbs
 void mazem(){
-    SetConsoleOutputCP(CP_UTF8);
-    SetConsoleCP(CP_UTF8);
     vector <string> Mazem = {
     //Inicia columna 19, fila 7
     //🐤 es coleccionable, Protagonista: 🐦
@@ -147,8 +137,6 @@ void mazem(){
 
 //Secretos
 void mazes1(){
-    SetConsoleOutputCP(CP_UTF8);
-    SetConsoleCP(CP_UTF8);  
     vector <string> MazeS1 ={
     //Protagonista Y
     //Pasar por todos los 1 antes de llegar a F 
@@ -166,8 +154,6 @@ void mazes1(){
 };
 
 void mazes2(){
-    SetConsoleOutputCP(CP_UTF8);
-    SetConsoleCP(CP_UTF8);
     vector <string> MazeS2 ={
     //Protagonista 🐝
     // Pasar por todos 🟦 antes de llegar a 🐞
@@ -182,4 +168,38 @@ void mazes2(){
     for (size_t i = 0; i < labf; ++i) {
         cout<<MazeS2[i]<<endl;
     }
+};
+
+void mazes3(){
+    vector <string> MazeS3 = {
+    //Protagonista 🐸  
+    //Pasar por todos 🟩 antes de llegar a 🐢
+    //No puede pasar por la ❎
+    "🌿 🌿 🌿 🌿 🌿",
+    "🌿 🟩 🟩 🟩 🌿",
+    "🌿 🐢 ❎ 🟩 🌿",
+    "🌿 🟩 🟩 🟩 🌿",
+    "🌿 🐸 🟩 🟩 🌿",
+    "🌿 🌿 🌿 🌿 🌿"
+    };
+    int labf=MazeS3.size();
+    for (size_t i = 0; i < labf; ++i) {
+    cout<<MazeS3[i]<<endl;
+    }
+};
+
+void maze4(){
+    //Protagonista 🐭
+    //Pasar por todos 🔲 antes de llegar a 🧀
+    vector <string> MazeS4 = {
+    "🧱 🧱 🧱 🧱 🧱 🧱 🧱 🧱 🧱 ",
+    "🧱 🧱 🔲 🔲 🧱 🔲 🔲 🧱 🧱",
+    "🧱 🔲 🔲 🔲 🔲 🔲 🔲 🔲 🧱",
+    "🧱 🔲 🔲 🔲 🔲 🔲 🔲 🔲 🧱",
+    "🧱 🧱 🔲 🔲 🧀 🔲 🔲 🧱 🧱",
+    "🧱 🔲 🔲 🔲 🔲 🔲 🔲 🔲 🧱",
+    "🧱 🔲 🔲 🔲 🔲 🔲 🔲 🔲 🧱",
+    "🧱 🧱 🔲 🔲 🐭 🔲 🔲 🧱 🧱",
+    "🧱 🧱 🧱 🧱 🧱 🧱 🧱 🧱 🧱",
+    } ;
 };
