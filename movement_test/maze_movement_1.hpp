@@ -1,5 +1,5 @@
-#ifndef MAZE_HPP
-#define MAZE_HPP
+#ifndef MAZE_MOVEMENT_1_HPP
+#define MAZE_MOVEMENT_1_HPP
 
 #include <iostream>
 #include <string>
