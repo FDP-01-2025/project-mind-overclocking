@@ -17,7 +17,7 @@ char laberinto [7][10] = {
 {' ','#',' ',' ',' ',' ',' ','#','#','#'},
 };
 
-void mostrarlaberinto () {
+void mostrarlaberinto1 () {
 for (int i = 0; i < 7; i++){
 
 for (int j = 0; j < 10; j++){
@@ -44,7 +44,7 @@ char laberinto [10][10] = {
 {'█','█',' ',' ','█',' ',' ',' ',' ',' '}
 };
 
-void mostrarlaberinto () {
+void mostrarlaberinto2 () {
 for (int i = 0; i < 10; i++){
 
 for (int j = 0; j < 10; j++){
@@ -73,7 +73,7 @@ char laberinto [10][20] = {
 {'█','█',' ',' ','█',' ',' ',' ',' ',' ','█','█','█','█','█','█','█','█','█','█'}
 };
 
-void mostrarlaberinto () {
+void mostrarlaberinto3 () {
 for (int i = 0; i < 10; i++){
 
 for (int j = 0; j < 20; j++){
@@ -99,7 +99,7 @@ char laberinto [7][14] = {
 
 };
 
-void mostrarlaberinto () {
+void mostrarlaberinto4 () {
 for (int i = 0; i < 7; i++){
 
 for (int j = 0; j < 14; j++){
@@ -129,7 +129,7 @@ char laberinto [10][14] = {
 
 };
 
-void mostrarlaberinto () {
+void mostrarlaberinto5 () {
 for (int i = 0; i < 10; i++){
 
 for (int j = 0; j < 14; j++){
@@ -141,6 +141,10 @@ cout << endl;
 
 }
 //llamar a la funcion mostrarlaberinto en el main
+
+
+
+
 
 
 
