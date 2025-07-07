@@ -1,5 +1,5 @@
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/mi1WNrHU)
-# Proyecto de C++ - [Nombre del Juego]
+# Proyecto de C++ - Brain Labyrinth
 
 ## Descripción del Proyecto
 
@@ -14,19 +14,18 @@ Este proyecto consiste en un juego de aventuras donde el jugador debe explorar u
 
 ### Integrantes del equipo
 
-1. **Nombre completo:** [Nombre del estudiante 1]  
-   **Carnet:** [Carnet del estudiante 1]
+1. **Nombre completo:** Dennis Alexander Fuentes Hernandez  
+   **Carnet:** 00144625
 
 2. **Nombre completo:** Diana Abigail Castillo Ramos
    **Carnet:** 00036625
 
-3. **Nombre completo:** [Nombre del estudiante 3]  
-   **Carnet:** [Carnet del estudiante 3]
+3. **Nombre completo:** Diego Armando Guzman Soriano
+   **Carnet:** 00188625
 
-4. **Nombre completo:** [Nombre del estudiante 4]  
-   **Carnet:** [Carnet del estudiante 4]
+4. **Nombre completo:** Reynaldo Alexander Avelar Linares 
+   **Carnet:** 00125625
 
-(Agregar más integrantes si es necesario)
 
 ## Instrucciones de Ejecución
 
