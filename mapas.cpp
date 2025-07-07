@@ -3,11 +3,11 @@
 using namespace std;
 
 
-//declaracion de la matriz de tipo char para la elaboracion del laberinto
+//declaracion de un vector de vectores tipo char
 
 //laberinto nivel sencillo
 
-char laberinto [7][10] = {
+vector<vector<char>> laberinto1 = {
 {'🧔',' ',' ','#','#','#','#','#','#',' '},
 {'#',' ','#','#','#',' ',' ','#',' ','#'},
 {' ',' ','#','#',' ',' ',' ',' ','#','#'},
@@ -18,10 +18,9 @@ char laberinto [7][10] = {
 };
 
 void mostrarlaberinto1 () {
-for (int i = 0; i < 7; i++){
-
-for (int j = 0; j < 10; j++){
- cout << laberinto [i][j] << ' ';
+for (const auto& fila : laberinto){
+for (char celda : fila){
+ cout << celda << ' ';
 }
 cout << endl;
 }
@@ -31,7 +30,7 @@ cout << endl;
 //llamar a la funcion mostrarlaberinto en el main
 
 
-char laberinto [10][10] = {
+vector<vector<char>> laberinto2 = {
 {'E','█','█','█','█','█','█','█',' ',' '},
 {' ',' ','█','█',' ',' ',' ',' ',' ',' '},
 {' ',' ',' ',' ',' ',' ','█','█','█','█'},
@@ -45,10 +44,10 @@ char laberinto [10][10] = {
 };
 
 void mostrarlaberinto2 () {
-for (int i = 0; i < 10; i++){
+for (const auto& fila : laberinto2 ){
 
-for (int j = 0; j < 10; j++){
- cout << laberinto [i][j] << ' ';
+for (char celda : fila){
+ cout << celda << ' ';
 }
 cout << endl;
 }
@@ -60,7 +59,7 @@ cout << endl;
 
 //mapa 3
 
-char laberinto [10][20] = {
+vector<vector<char>> laberinto3 = {
 {'E','█','█','█','█','█','█',' ',' ',' ',' ',' ',' ',' ',' ','█','█','█','█',' '},
 {' ',' ','█','█',' ',' ',' ',' ',' ',' ',' ','█',' ',' ',' ',' ',' ',' ','█',' '},
 {' ',' ',' ',' ',' ',' ','█','█','█','█',' ',' ',' ',' ','█','♦',' ',' █',' ',' '},
@@ -74,10 +73,10 @@ char laberinto [10][20] = {
 };
 
 void mostrarlaberinto3 () {
-for (int i = 0; i < 10; i++){
+for (const auto& fila : laberinto3){
 
-for (int j = 0; j < 20; j++){
- cout << laberinto [i][j] << ' ';
+for (char celda : fila){
+ cout << celda << ' ';
 }
 cout << endl;
 }
@@ -86,7 +85,7 @@ cout << endl;
 }
 //llamar a la funcion mostrarlaberinto en el main
 
-char laberinto [7][14] = {
+vector<vector<char>> laberinto4 = {
 {'🐶','█','█','█','█','█','█',' ',' ',' ',' ',' ',' ',' '},
 {' ',' ','█','█','',' ',' ',' ',' ',' ',' ','█',' ',' '},
 {' ',' ',' ',' ',' ',' ','█','█','█','█',' ',' ','🍗',' '},
@@ -100,10 +99,10 @@ char laberinto [7][14] = {
 };
 
 void mostrarlaberinto4 () {
-for (int i = 0; i < 7; i++){
+for (const auto& fila : laberinto4){
 
-for (int j = 0; j < 14; j++){
- cout << laberinto [i][j] << ' ';
+for (char celda : fila){
+ cout << celda << ' ';
 }
 cout << endl;
 }
@@ -112,7 +111,7 @@ cout << endl;
 }
 //llamar a la funcion mostrarlaberinto en el main
 
-char laberinto [10][14] = {
+vector<vector<char>> laberinto5 = {
 {'🐑','█','█','█','█','█','█',' ',' ','█','█','█','█','█'},
 {' ',' ','█','█','█',' ',' ',' ','🐻',' ',' ','█',' ',' '},
 {' ',' ',' ',' ',' ',' ','█','█','█','█',' ',' ','█',' '},
@@ -130,10 +129,10 @@ char laberinto [10][14] = {
 };
 
 void mostrarlaberinto5 () {
-for (int i = 0; i < 10; i++){
+for (const auto& fila : laberinto5){
 
-for (int j = 0; j < 14; j++){
- cout << laberinto [i][j] << ' ';
+for (char celda : fila){
+ cout << celda << ' ';
 }
 cout << endl;
 }
