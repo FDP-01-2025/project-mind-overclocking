@@ -201,5 +201,27 @@ void maze4(){
     "🧱 🔲 🔲 🔲 🔲 🔲 🔲 🔲 🧱",
     "🧱 🧱 🔲 🔲 🐭 🔲 🔲 🧱 🧱",
     "🧱 🧱 🧱 🧱 🧱 🧱 🧱 🧱 🧱",
-    } ;
+    };
+    int labf=MazeS4.size();
+    for (size_t i = 0; i < labf; ++i) {
+    cout<<MazeS4[i]<<endl;
+    }
+};
+
+void maze5(){
+    //Protagonista 🐦
+    //Pasa por todas ⭐ antes de llegar a 🐤
+    vector<string> MazeS5={
+    "🌙 🌙 🌙 🌙 🌙 🌙 🌙",
+    "🌙 🌙 ⭐ ⭐ ⭐ ⭐ 🌙",
+    "🌙 ⭐ ⭐ 🐤 ⭐ ⭐ 🌙",
+    "🌙 ⭐ 🌙 ⭐ ⭐ 🌙 🌙",
+    "🌙 ⭐ 🌙 ⭐ ⭐ ⭐ 🌙",
+    "🌙 🐦 🌙 ⭐ ⭐ ⭐ 🌙",
+    "🌙 🌙 🌙 🌙 🌙 🌙 🌙"
+    };
+    int labf=MazeS5.size();
+    for (size_t i = 0; i < labf; ++i) {
+    cout<<MazeS5[i]<<endl;
+    }
 };
