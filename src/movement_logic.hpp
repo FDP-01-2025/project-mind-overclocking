@@ -32,7 +32,7 @@ bool puedeMover(const string& celda, const set<string>& caminosValidos) {
     return caminosValidos.count(celda) > 0;
 }
 
-void iniciarJuego(vector<vector<string>> grid, int inicioX, int inicioY,
+ bool iniciarJuego(vector<vector<string>> grid, int inicioX, int inicioY,
                   const set<string>& caminosValidos, const string& personaje, const string& meta) {
 
     vector<vector<string>> mapaOriginal = grid;
