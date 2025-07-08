@@ -18,12 +18,12 @@ El proyecto consiste en un juego del tipo puzzle, en donde el jugador tiene la o
       Se ha utilizado bool para saber si el juego a o no acabado, y void para funciones que no necesiten se les introduzca algun dato (como mapas o movimiento).
 
    - Estructuras condicionales (if, else, switch)
-      If ha sido utilizado para asegurar si el jugador puede moverse en la casilla seleccionada.
-      Else ha sido utilizado para en caso de no poder moverse a la casilla avise al jugador.
+      If ha sido utilizado para asegurar si el jugador puede moverse en la casilla seleccionada./
+      Else ha sido utilizado para en caso de no poder moverse a la casilla avise al jugador./
       Switch ha sido utilizado para seleccionar dificultad, y el mapa a jugar.
 
    - Ciclos (for, while, do while)
-      For ha sido utilizado para mostrar los mapas de los laberintos en consola,
+      For ha sido utilizado para mostrar los mapas de los laberintos en consola./
       While ha sido utilizado para que mientras el jugador no decida salir del juego, al acabar un mapa regresara a la interfaz principal.
       
    - Funciones
@@ -42,7 +42,10 @@ El proyecto consiste en un juego del tipo puzzle, en donde el jugador tiene la o
 
 - Imágenes o mockups del juego
    ![Menu](MAINMENU.png)
+   ![Creditos](CREDITOS.png)
+   ![Dificultades](LVL-DIFFICULTY.png)
    ![Mapa](MAP.png)
+   ![Movimiento](MOVEMENT.png)
    
 ## Equipo
 
@@ -65,6 +68,9 @@ El proyecto consiste en un juego del tipo puzzle, en donde el jugador tiene la o
 
 ## Instrucciones de Ejecución
 
-1. Clona este repositorio en tu máquina local:
+1. Abre una terminal en tu Escritorio y clona este repositorio en tu máquina local:
    ```bash
-   git clone [URL del repositorio]
+   git clone [https://github.com/FDP-01-2025/project-mind-overclocking.git]
+2. Cuando ya tengas lista tu carpeta dirigite al .exe de nombre Game.exe
+3. Da click y se abrira una pestaña emergente con el juego.
+4. Disfruta de tu experiencia!
