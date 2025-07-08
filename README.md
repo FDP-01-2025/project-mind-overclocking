@@ -34,12 +34,16 @@ El proyecto consiste en un juego del tipo puzzle, en donde el jugador tiene la o
    - Manejo de archivos
 
    - Manejo de errores
+     Se controla que el jugador no pueda salirse de los limites del laberinto.
+     
 
    - Interfaz por consola
+     Todo el juego se ejecuta en consola, utilizando salidas de texto y emojis para representar personajes, muros y caminos.
 
    - Consideraciones técnicas del desarrollo
-      Se ha utilizado la libreria vector para facilitar el movimiento a traves de los laberintos.
-
+     - Se ha utilizado la libreria vector para facilitar el movimiento a traves de los laberintos.
+     - Se organizaron los laberintos en funciones separadas para modularidad del codigo.
+      
 - Imágenes o mockups del juego
    ![Menu](MAINMENU.png)
    ![Creditos](CREDITOS.png)
