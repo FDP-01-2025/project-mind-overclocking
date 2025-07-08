@@ -9,53 +9,53 @@
 
 using namespace std;
 
-struct MapaConInicio {
-    vector<string> mapa;
-    int inicioX;
-    int inicioY;
-    set<string> caminosValidos;
-    string personaje;
-    string meta;
+struct MapWithStart {
+    vector<string> map;
+    int startX;
+    int startY;
+    set<string> validPaths;
+    string character;
+    string goal;
 };
 
-// Nueva estructura completa con meta incluida
+// New structure including goal
 struct MazeData {
     vector<vector<string>> grid;
-    int inicioX;
-    int inicioY;
-    set<string> caminosValidos;
-    string personaje;
-    string meta;
+    int startX;
+    int startY;
+    set<string> validPaths;
+    string character;
+    string goal;
 };
 
-void mostrarOpcionesDeMapa() {
-    cout << "\nSelecciona una dificultad:\n";
-    cout << "1. Fácil\n2. Medio\n3. Difícil\n";
-    cout << "Ingresa el número de dificultad: ";
+void showMapOptions() {
+    cout << "\nSelect a difficulty:\n";
+    cout << "1. Easy\n2. Medium\n3. Hard\n";
+    cout << "Enter the difficulty number: ";
 }
 
-void mostrarMapasPorDificultad(int dificultad) {
-    switch (dificultad) {
+void showMapsByDifficulty(int difficulty) {
+    switch (difficulty) {
         case 1:
-            cout << "\nMapas Fáciles:\n1. Jardín de Girasoles\n2. Jardín Reducido\n";
+            cout << "\nEasy Maps:\n1. Sunflower Garden\n2. Mini Garden\n";
             break;
         case 2:
-            cout << "\nMapas Medios:\n1. Ratas\n2. Amigos Verdes\n3. Migajas\n";
+            cout << "\nMedium Maps:\n1. Rats\n2. Green Friends\n3. Crumbs\n";
             break;
         case 3:
-            cout << "\nMapas Difíciles:\n1. Secretos 1\n2. Secretos 2\n3. Secretos 3\n4. Secretos 4\n5. Secretos 5\n";
+            cout << "\nHard Maps:\n1. Secrets 1\n2. Secrets 2\n3. Secrets 3\n4. Secrets 4\n5. Secrets 5\n";
             break;
         default:
-            cout << "\nDificultad no válida.\n";
+            cout << "\nInvalid difficulty.\n";
             break;
     }
-    cout << "Selecciona el mapa (por número): ";
+    cout << "Select the map (by number): ";
 }
 
-MapaConInicio obtenerMapa(int dificultad, int seleccion) {
-    switch (dificultad) {
+MapWithStart getMap(int difficulty, int selection) {
+    switch (difficulty) {
         case 1:
-            switch (seleccion) {
+            switch (selection) {
                 case 1:
                     return {
                         {
@@ -92,7 +92,7 @@ MapaConInicio obtenerMapa(int dificultad, int seleccion) {
             }
             break;
         case 2:
-            switch (seleccion) {
+            switch (selection) {
                 case 1:
                     return {
                         {
@@ -121,9 +121,9 @@ MapaConInicio obtenerMapa(int dificultad, int seleccion) {
                             "🌿 🌿 🌿 🟩 🌿 🌿 🟩 🟩 🟩 🟩 🌿",
                             "🌿 🟩 🟩 🟩 🌿 🌿 🌿 🌿 🟩 🌿 🌿",
                             "🌿 🟩 🌿 🌿 🌿 🌿 🟩 🟩 🟩 🟩 🌿",
-                            "🌿 🟩 🌿 🌿 🌿 🟩 🟩 🌿 🌿 🌿 🌿",
+                            "🌿 🟩 🌿 🌿 🌿 🟩 🟩 🌿 🌿 🟩 🌿",
                             "🌿 🟩 🌿 🌿 🟩 🟩 🌿 🌿 🟩 🟩 🌿",
-                            "🌿 🟩 🐢 🌿 🟩 🌿 🌿 🌿 🌿 🟩 🌿"
+                            "🌿 🟩 🟩 🟩 🟩 🌿 🌿 🌿 🟩 🐢 🌿"
                         },
                         0, 1,
                         {"🟩", "🐢"},
@@ -151,7 +151,7 @@ MapaConInicio obtenerMapa(int dificultad, int seleccion) {
             }
             break;
         case 3:
-            switch (seleccion) {
+            switch (selection) {
                 case 1:
                     return {
                         {
@@ -175,7 +175,8 @@ MapaConInicio obtenerMapa(int dificultad, int seleccion) {
                             "🌻 🟦 🟦 🟦 🟦 🌻",
                             "🌻 🟦 🟦 🟦 🟦 🌻",
                             "🌻 🟦 🐝 🟦 🟦 🌻",
-                            "🌻 🌻 🌻 🌻 🌻 🌻"
+                            "🌻 🌻 🌻 🌻 🌻 🌻",
+                            
                         },
                         2, 4,
                         {"🟦", "🐞"},
@@ -187,7 +188,7 @@ MapaConInicio obtenerMapa(int dificultad, int seleccion) {
                         {
                             "🌿 🌿 🌿 🌿 🌿",
                             "🌿 🟩 🟩 🟩 🌿",
-                            "🌿 🐢 ❎ 🟩 🌿",
+                            "🌿 🐢 🟩 🟩 🌿",
                             "🌿 🟩 🟩 🟩 🌿",
                             "🌿 🐸 🟩 🟩 🌿",
                             "🌿 🌿 🌿 🌿 🌿"
@@ -235,15 +236,15 @@ MapaConInicio obtenerMapa(int dificultad, int seleccion) {
             break;
     }
 
-    cout << "Dificultad no válida. Se cargará el nivel fácil por defecto.\n";
-    return obtenerMapa(1, 1);
+    cout << "Invalid difficulty. Defaulting to easy level.\n";
+    return getMap(1, 1);
 }
 
-// Función que convierte el mapa y empaqueta todos los datos
-MazeData getMazeGrid(int dificultad, int mapaSeleccion) {
-    MapaConInicio mapa = obtenerMapa(dificultad, mapaSeleccion);
-    auto grid = convertirAMatriz(mapa.mapa);
-    return { grid, mapa.inicioX, mapa.inicioY, mapa.caminosValidos, mapa.personaje, mapa.meta };
+// Converts the map and packs all the data
+MazeData getMazeGrid(int difficulty, int mapSelection) {
+    MapWithStart map = getMap(difficulty, mapSelection);
+    auto grid = convertToMatrix(map.map);
+    return { grid, map.startX, map.startY, map.validPaths, map.character, map.goal };
 }
 
 #endif
