@@ -37,10 +37,12 @@ El proyecto consiste en un juego del tipo puzzle, en donde el jugador tiene la o
    - Manejo de archivos
 
    - Manejo de errores
+
      Se controla que el jugador no pueda salirse de los limites del laberinto.
      
 
    - Interfaz por consola
+
      Todo el juego se ejecuta en consola, utilizando salidas de texto y emojis para representar personajes, muros y caminos.
 
    - Consideraciones técnicas del desarrollo
