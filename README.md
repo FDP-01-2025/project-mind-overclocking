@@ -29,8 +29,11 @@ El proyecto consiste en un juego del tipo puzzle, en donde el jugador tiene la o
    - Funciones
       Se han utilizado funciones para realizar los mapas, movimiento e interfaz a utilizar en librerias y que solo sean llamados en el main.
 
+   
    - Estructuras de datos
+
      Se emplearon arreglos dinámicos para representar cada laberinto de manera flexible.
+   
    - Manejo de archivos
 
    - Manejo de errores
