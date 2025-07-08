@@ -86,3 +86,12 @@ El proyecto consiste en un juego del tipo puzzle, en donde el jugador tiene la o
 2. Cuando ya tengas lista tu carpeta dirigite al .exe de nombre Game.exe
 3. Da click y se abrira una pestaña emergente con el juego.
 4. Disfruta de tu experiencia!
+
+## Flujogramas
+![Main](Main.png)
+![MainMenu](main_menu.png)
+![Logic](maze_logic.png)
+![Movement](maze_movement.png)
+![Placement](player_placement.png)
+![Status](player_status.png)
+![Utils](vector_utils.png)
