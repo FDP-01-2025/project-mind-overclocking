@@ -35,6 +35,8 @@ El proyecto consiste en un juego del tipo puzzle, en donde el jugador tiene la o
      Se emplearon arreglos dinámicos para representar cada laberinto de manera flexible.
    
    - Manejo de archivos
+     
+      El uso de archivos en el proyecto abre un campo nuevo de posibilidades cual hemos aprovechado, en nuestro caso el código encargado de guardar y continuar las partidas se base en escribir en un archivo la información del jugador o leerla, de este modo se puede usar el manejo de archivos para guardar información (variables) o usarlas en otro lugar, como pueden ser las funciones, mismamente en el código una función guarda su información en un archivo y otro función la lee. Algunos podrian entender más fácil el manejo de archivos que el struct y decir "es mejor que el struct", pero aunque el manejo de archivos es bastante funcional no logra reemplazar el orden y capacidad de administración que puede ofrecer un struct.
 
    - Manejo de errores
 
