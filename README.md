@@ -23,7 +23,7 @@ El proyecto consiste en un juego del tipo puzzle, en donde el jugador tiene la o
       Switch ha sido utilizado para seleccionar dificultad, y el mapa a jugar.
 
    - Ciclos (for, while, do while)
-      For ha sido utilizado para 
+      For ha sido utilizado para mostrar los mapas de los laberintos en consola,
       While ha sido utilizado para que mientras el jugador no decida salir del juego, al acabar un mapa regresara a la interfaz principal.
       
    - Funciones
