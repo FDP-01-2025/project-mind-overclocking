@@ -21,50 +21,50 @@ void printMap(const vector<vector<string>>& grid) {
     }
 }
 
-char pedirMovimiento() {
+char requestMove() {
     char input;
-    cout << "\nMover jugador (W=arriba, A=izquierda, S=abajo, D=derecha): ";
+    cout << "\nMove player (W=up, A=left, S=down, D=right): ";
     cin >> input;
     return toupper(input);
 }
 
-bool puedeMover(const string& celda, const set<string>& caminosValidos) {
-    return caminosValidos.count(celda) > 0;
+bool canMoveTo(const string& cell, const set<string>& validPaths) {
+    return validPaths.count(cell) > 0;
 }
 
- bool iniciarJuego(vector<vector<string>> grid, int inicioX, int inicioY,
-                  const set<string>& caminosValidos, const string& personaje, const string& meta) {
+bool startGame(vector<vector<string>> grid, int startX, int startY,
+               const set<string>& validPaths, const string& character, const string& goal) {
 
-    vector<vector<string>> mapaOriginal = grid;
+    vector<vector<string>> originalMap = grid;
 
-    mostrarInformacionDelJugador(personaje, meta);
+    showPlayerInfo(character, goal);
 
-    int playerX = inicioX, playerY = inicioY;
+    int playerX = startX, playerY = startY;
 
-    grid[playerY][playerX] = personaje;
+    grid[playerY][playerX] = character;
 
     bool gameOver = false;
 
-    // Elegir casilla transitable para reemplazo (suelo)
-    string casillaReemplazo;
+    // Choose a valid traversable cell (ground) for replacement
+    string replacementCell;
 
-    // Intentar elegir un emoji válido que no sea personaje ni meta
-    for (const auto& celda : caminosValidos) {
-        if (celda != personaje && celda != meta) {
-            casillaReemplazo = celda;
+    // Try to pick a valid emoji that is not the character or the goal
+    for (const auto& cell : validPaths) {
+        if (cell != character && cell != goal) {
+            replacementCell = cell;
             break;
         }
     }
-    // Si no se encontró ninguno diferente, tomar cualquiera (el primero)
-    if (casillaReemplazo.empty() && !caminosValidos.empty()) {
-        casillaReemplazo = *caminosValidos.begin();
+    // If none found, use any (the first one)
+    if (replacementCell.empty() && !validPaths.empty()) {
+        replacementCell = *validPaths.begin();
     }
 
     while (!gameOver) {
         system("cls");
         printMap(grid);
 
-        char move = pedirMovimiento();
+        char move = requestMove();
         int newX = playerX, newY = playerY;
 
         switch (move) {
@@ -76,31 +76,33 @@ bool puedeMover(const string& celda, const set<string>& caminosValidos) {
         }
 
         if (newX < 0 || newX >= (int)grid[0].size() || newY < 0 || newY >= (int)grid.size()) {
-            cout << "No puedes salir del mapa! Presiona una tecla...";
+            cout << "You can't leave the map! Press any key...";
             system("pause>nul");
             continue;
         }
 
-        if (puedeMover(grid[newY][newX], caminosValidos)) {
-            // Reemplazar la casilla anterior del jugador con la casilla transitable elegida
-            grid[playerY][playerX] = casillaReemplazo;
+        if (canMoveTo(grid[newY][newX], validPaths)) {
+            // Replace previous player cell with the chosen traversable cell
+            grid[playerY][playerX] = replacementCell;
 
             playerX = newX;
             playerY = newY;
 
-            grid[playerY][playerX] = personaje;
+            grid[playerY][playerX] = character;
 
-            if (mapaOriginal[playerY][playerX] == meta) {
+            if (originalMap[playerY][playerX] == goal) {
                 system("cls");
                 printMap(grid);
-                cout << "\n¡Felicidades! ¡Has llegado a la meta! 🎉\n";
+                cout << "\nCongratulations! You reached the goal! 🎉\n";
                 gameOver = true;
             }
         } else {
-            cout << "No puedes pasar ahí! Presiona una tecla...";
+            cout << "You can't go there! Press any key...";
             system("pause>nul");
         }
     }
+
+    return true;
 }
 
 #endif

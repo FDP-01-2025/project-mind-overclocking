@@ -7,7 +7,7 @@
 
 using namespace std;
 
-vector<vector<string>> convertirAMatriz(const vector<string>& map) {
+vector<vector<string>> convertToMatrix(const vector<string>& map) {
     vector<vector<string>> grid;
     for (const auto& row : map) {
         vector<string> tokens;

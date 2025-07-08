@@ -6,10 +6,10 @@
 
 using namespace std;
 
-string colocarPersonaje(vector<vector<string>>& grid, int x, int y, const string& personaje) {
-    string celdaOriginal = grid[y][x];
-    grid[y][x] = personaje;
-    return celdaOriginal;
+string placeCharacter(vector<vector<string>>& grid, int x, int y, const string& character) {
+    string originalCell = grid[y][x];
+    grid[y][x] = character;
+    return originalCell;
 }
 
 #endif
